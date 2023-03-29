@@ -14,5 +14,5 @@ ui demo
 - [ ] Slider elemnta lietojums 
 - [ ] Audio source elementa lietojums 
 - [ ] Scroll view elementa lietojums 
-- [ ] Drag and drop funkcionālec ieviešana
-- [ ] Projekta sagaravošana .exe un WebGL formatos
+- [ ] Drag and drop funkcionāles ieviešana
+- [ ] Projekta sagatavošana .exe un WebGL formatos
