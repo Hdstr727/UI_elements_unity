@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class VardaParadisana : MonoBehaviour {
 
 	private string teksts;
-	private string[] varianti = { "Sveiks", "Jauku dienu!", "Prieks tevi redzet!", "Uzredzesanos" };
+	private string[] varianti = { "Sveiks ", "Jauku dienu! ", "Prieks tevi redzet! ", "Uzredzesanos " };
 
 	int nejausais;
 	public GameObject ievadesLauks;
