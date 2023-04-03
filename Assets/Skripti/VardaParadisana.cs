@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class VardaParadisana : MonoBehaviour {
+public class VardaParadisana : MonoBehaviour 
+{
 
 	private string teksts;
 	private string[] varianti = { "Sveiks ", "Jauku dienu! ", "Prieks tevi redzet! ", "Uzredzesanos " };
@@ -12,7 +13,8 @@ public class VardaParadisana : MonoBehaviour {
 	public GameObject ievadesLauks;
 	public GameObject tekstaAttelosana;
 
-	public void UzglabatTekstu() {
+	public void UzglabatTekstu() 
+	{
 		nejausais = Random.Range (0, varianti.Length);
 		teksts = ievadesLauks.GetComponent<Text> ().text;
 		tekstaAttelosana.GetComponent<Text>().text = varianti[nejausais]+teksts.ToUpper()+"!";
