@@ -12,6 +12,9 @@ public class HideAndUnhide : MonoBehaviour
     public GameObject masina;
     public GameObject PaKreisi;
     public GameObject PaLabi;
+    public GameObject MainigaisAttels;
+    public Sprite[] atteluMasivs;
+    public GameObject IzmeraSlaideris;
     public void BeanAttels(bool vertiba) 
     { 
         bean.SetActive(vertiba);
@@ -45,4 +48,21 @@ public class HideAndUnhide : MonoBehaviour
         bean.transform.localScale = new Vector2(-1, 1);
     }
 
+    public void Izkritosais(int indekss) 
+    { 
+        if(indekss == 0)
+            MainigaisAttels.GetComponent<Image>().sprite = atteluMasivs[0];
+        else if (indekss == 1)
+            MainigaisAttels.GetComponent<Image>().sprite = atteluMasivs[1];
+        else if (indekss == 2)
+            MainigaisAttels.GetComponent<Image>().sprite = atteluMasivs[2];
+
+    }
+
+    public void MainitIzmeru()
+    {
+        float pasreizejaisIzmers = IzmeraSlaideris.GetComponent<Slider>().value;
+        MainigaisAttels.transform.localScale = new Vector2(1f*pasreizejaisIzmers, 1f*pasreizejaisIzmers);
+    }
 }
+    
