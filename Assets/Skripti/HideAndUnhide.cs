@@ -15,6 +15,7 @@ public class HideAndUnhide : MonoBehaviour
     public GameObject MainigaisAttels;
     public Sprite[] atteluMasivs;
     public GameObject IzmeraSlaideris;
+    public GameObject RotacijasSlaideris;
     public void BeanAttels(bool vertiba) 
     { 
         bean.SetActive(vertiba);
@@ -58,11 +59,15 @@ public class HideAndUnhide : MonoBehaviour
             MainigaisAttels.GetComponent<Image>().sprite = atteluMasivs[2];
 
     }
-
     public void MainitIzmeru()
     {
         float pasreizejaisIzmers = IzmeraSlaideris.GetComponent<Slider>().value;
         MainigaisAttels.transform.localScale = new Vector2(1f*pasreizejaisIzmers, 1f*pasreizejaisIzmers);
+    }
+    public void MainitRotaciju()
+    {
+        float pasreizejaVertiba = RotacijasSlaideris.GetComponent <Slider>().value;
+        MainigaisAttels.transform.localRotation = Quaternion.Euler(0, 0, pasreizejaVertiba*360);
     }
 }
     
